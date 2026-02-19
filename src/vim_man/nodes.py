@@ -14,8 +14,10 @@ from vim_man.constants import (
     VERTICAL,
     HORIZONTAL,
 )
-
-from vim_man.level import MazeLevel
+if TYPE_CHECKING:
+    from vim_man.entity import Entity
+    
+from entity import EntityID
 from vim_man.types import MazeArray
 from vim_man.vector import Vector2D
 
